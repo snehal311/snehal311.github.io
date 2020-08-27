@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <style>
+            .d{
+     height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:palevioletred;
+  overflow-x: hidden;
+  padding-top: 20px;}
+            h1{margin-left: 200px;}
+            .d1{margin-left: 200px;}
+            input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;}
+.rectangle{background-color: white; margin-bottom: 20px; width: 400px; height: 100%;margin-left: 200px;}
+.w3-btn {width:150px;}
+
+
+        </style>
+    </head>
+     <body style="background-color:papayawhip">
+        <form action="addbook.jsp" method="post"></form>
+        <h1>Add Book</h1>
+        <div class="d">
+            <img class="img" src="images/home icon.jpg" onclick="location.href='book.jsp';"/>
+            </br>
+        <h2 style="color:khaki"><b>Library CC</b></h2><br>
+        <br>
+        <a href="book.html" style="color:black; font-size: 20px">Books</a><br>
+        <br>
+        <a href="category.html" style="color:black; font-size: 20px">Category</a><br>
+        <br>
+        <a href="author.html" style="color:black; font-size: 20px">Author</a><br>
+        <br>
+        <a href="student.html" style="color:black; font-size: 20px">Student</a><br>
+        <br>
+        <a href="issue.html" style="color:black; font-size: 20px">Issue date</a><br>
+        <br>
+        <input type="button" value="Logout" name="logout" class="l1" onclick="location.href='index.html';">
+    </div>
+        <table class="d1">
+            <tr>
+                
+                <td >
+                    <input type="button" value="Add Book" name="b" onclick="location.href='addbook.html';" style="color:palevioletred"></td><td width="20px"></td>
+                <td > <input type="button" value="View All Book" name="b" onclick="location.href='viewbook.jsp';" style="color:blue" >
+                </td><td width="20px"></td>
+                <td >
+                    <input type="button" value="Search book" name="b" onclick="location.href='searchbook.html';" style="color:indianred">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <table><tr><td>
+        <div class="rectangle">
+            <table>
+                <tr><td>Add Book Form</td></tr>
+                <tr ><td height="10px"></td></tr>
+                <tr><td>Book Title </td><td></td><td><input type="text" name="title"></td></tr>
+                <tr ><td height="10px"></td></tr>
+                <tr><td>Category</td><td></td><td><input type="text" name="category"></td></tr>
+                <tr></tr><td height="10px"></td>
+                <tr><td>Author </td><td></td><td><input type="text" name="author"></td></tr>
+                <tr></tr><td height="10px"></td>
+                <tr><td>Publisher </td><td></td><td><input type="text" name="publisher"></td></tr>
+                <tr></tr><td height="10px"></td>
+                <tr><td>Edition </td><td></td><td><input type="text" name="edition"></td></tr>
+                <tr></tr><td height="10px"></td>
+                <tr><td>Volume </td><td></td><td><input type="text" name="volume"></td></tr>
+                <tr></tr><td height="10px"></td>
+                <tr><td>Price</td><td></td><td><input type="text" name="price"></td></tr>
+                <tr></tr><td height="10px"></td>
+                <tr><td>Language </td><td></td><td><input type="text" name="language"></td></tr>
+                <tr></tr><td height="10px"></td>
+                <tr><td>Description </td><td></td><td><input type="text" name="description"></td></tr>
+                <tr></tr><td height="20px"></td>
+                <tr><td></td><td></td><td><button class="w3-button w3-red w3-round-xlarge" name="b" onclick="location.href='addbook.jsp';">Add Book</button></td></tr>
+            </table></div></td>
+            <td>
+            <img src="images/l4.jpg" class="img" alt="not seen" align="left">
+        </td></tr>
+        </table>
+    </body>
+</html>

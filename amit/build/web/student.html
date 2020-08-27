@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+             .d{
+     height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:palevioletred;
+  overflow-x: hidden;
+  padding-top: 20px;}
+            h1{margin-left: 200px;}
+            .d1{margin-left: 160px;}
+            .square {background-color: white; margin-bottom: 20px; width: 600px; height: 200px;}
+            .t1{margin-left: 200px;}
+            button{
+overflow:auto ; 
+text-align: center;
+font-size: 1.0em;
+font-weight: bold;
+line-height: 200%; }
+            text{ height: 10px;}
+        </style>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body style="background-color:papayawhip">
+    <center><h1>Student Search</h1></center>
+        <div class="d">
+            <img class="img" src="images/home icon.jpg" onclick="location.href='book.jsp';"/>
+            <br>
+        <h2 style="color:khaki"><b>Library CC</b></h2><br>
+        <br>
+        <a href="book.html" style="color:black; font-size: 20px">Books</a><br>
+        <br>
+        <a href="category.html" style="color:black; font-size: 20px">Category</a><br>
+        <br>
+        <a href="author.html" style="color:black; font-size: 20px">Author</a><br>
+        <br>
+        <a href="student.html" style="color:black; font-size: 20px">Student</a><br>
+        <br>
+        <a href="issue.html" style="color:black; font-size: 20px">Issue date</a><br>
+        <br>
+        <input type="button" value="Logout" name="logout" class="l1">
+    </div>
+        <table class="d1">
+            <tr>
+                <td style="color:yellow">
+                    <input type="button" value="Add Students" name="addb"></td><td width="20px"></td>
+                <td style="color:red" > <input type="button" value="Search students" name="viewb">
+                </td><td width="20px"></td>
+                <td style="color:blue">
+                    <input type="button" value="View All Students" name="searchb">
+                </td>
+            </tr>
+        </table>
+        <br><br>
+       <table>
+            <tr><td>
+        <div class="square">
+            <table class="t1">
+                <tr><td><b>Search category</b></td><td></td></tr>
+                <tr><td>Student</td><td><input type="text" name="a"></td></tr>
+                <br>
+                <br>
+                <tr height="20px"></tr>
+                <tr><td><input type="button" name="addc" value="Search Student"></td></tr>
+            </table></div></td><td width="20px"></td>
+            <td> 
+                <i class="glyphicon glyphicon-book"><input type="text" name="a" class="text" size="4"><br>Total number<br> of books</i>
+            </td><td width="50px"></td>
+                <td><i class="glyphicon glyphicon-heart"><input type="text" name="a" class="text" size="4"><br>Total students</i></td>
+                <td width="50px"></td>
+                <td><i class="glyphicon glyphicon-bookmark"><input type="text" name="a" class="text" size="4"><br>Total issues today</i></td>
+                <td width="50px"></td>
+                <td><i class="glyphicon glyphicon-star"><input type="text" name="a" class="text" size="4"><br>Total books out</i></td>
+            </tr>
+       </table>
+    </body>
+
+</html>

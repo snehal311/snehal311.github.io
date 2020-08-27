@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .d{
+     height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:palevioletred;
+  overflow-x: hidden;
+  padding-top: 20px;}
+            h1{margin-left: 200px;}
+            .square {background-color: white; margin-bottom: 20px; width: 600px; height: 200px;}
+            .t1{margin-left: 200px;}
+            .square1{ background-color: white; width: 500px; height: 200px;}
+            .t1{margin-left: 200px;}
+            .rectangle{background-color: white; margin-left: 150px; }
+        </style>
+    </head>
+    <body style="background-color:papayawhip">
+        <h1>Add Category</h1>
+        <div class="d">
+            <img class="img" src="images/home icon.jpg" onclick="location.href='book.jsp';"/>
+            <br>
+        <h2 style="color:khaki"><b>Library CC</b></h2></br>
+        </br>
+        <a href="book.html" style="color:black; font-size: 20px">Books</a></br>
+        </br>
+        <a href="category.html" style="color:black; font-size: 20px">Category</a></br>
+        </br>
+        <a href="author.html" style="color:black; font-size: 20px">Author</a></br>
+        </br>
+        <a href="student.html" style="color:black; font-size: 20px">Student</a></br>
+        </br>
+        <a href="issue.html" style="color:black; font-size: 20px">Issue date</a></br>
+        </br>
+        <input type="button" value="Logout" name="logout" class="l1" onclick="location.href='index.html';">
+    </div>
+        <table>
+            <tr><td>
+        <div class="square">
+            <table class="t1">
+                <tr><td><b>Add category</b></td><td></td></tr>
+                <tr><td>Category</td><td><input type="text" name="a"></td></tr>
+                <tr><td>Description</td><td><input type="text" name="a"></td></tr><br>
+                <br>
+                <tr height="20px"></tr>
+                <tr><td><input type="button" name="addc" value="Add Category"></td></tr>
+            </table>
+        </div></td><td width="40px"></td>
+        <td>
+            <div class="square1">
+            <table class="t1">
+                <tr><td>Search category</td><td></td></tr>
+                <tr><td>Category</td><td><input type="text" name="a"></td></tr>
+               <br>
+                <br>
+                <tr height="20px"></tr>
+                <tr><td><input type="button" name="addc" value="Search"></td></tr>
+            </table></div>
+        </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br><div class="rectangle">
+        <table class="t2" >
+            <tr border="2"><td>Categories</td></tr>
+            <tr><td>#</td><td width="500px">Category</td><td width="500px">Profile</td><td width="500px">Edit</td></tr>
+        </table>
+        </div>
+    </body >
+</html>
